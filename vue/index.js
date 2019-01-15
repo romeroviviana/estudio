@@ -65,3 +65,38 @@ var app7 = new Vue({
 		]
 	}
 })
+
+
+
+
+
+//instance
+var data = {
+	a: 1
+}
+var vm = new Vue({
+	el: "#vm",
+	data: data
+})
+
+
+// Object Freeze
+var obj = {
+	foo: 'bar'
+}
+
+Object.freeze(obj)
+
+var freeze = new Vue({	
+	el: "#freeze",
+	data: obj
+})
+
+
+
+//metodos y propiedades
+var data2 = { a : 1 }
+var metodo = new Vue({
+	el: "#metodo",
+	data: data2
+})
